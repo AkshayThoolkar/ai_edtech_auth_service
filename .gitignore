@@ -1,0 +1,102 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Environment Variables
+
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Alembic
+# Don't ignore alembic.ini and versions folder, but ignore any temp files
+
+# Development and Testing Files
+test_*.py
+*_test.py
+comprehensive_e2e_test.py
+google_oauth_verification.py
+check_*.py
+setup_database.py
+
+# Reports and Documentation (Development)
+*_REPORT.md
+*_COMPLETION_REPORT.md
+*_MILESTONE_REPORT.md
+*_VALIDATION_REPORT.md
+*_ASSIGNMENT.md
+*_INSTRUCTIONS.md
+*_CHECKLIST.md
+*_GUIDE.md
+*_SUMMARY.md
+PHASE_*.md
+TASK_*.md
+SUB_TASK_*.md
+SUBTASK_*.md
+MANAGER_*.md
+DEVELOPER_*.md
+FINAL_*.md
+GLOBAL_*.md
+INPUT_*.md
+LOGIN_*.md
+REGISTRATION_*.md
+SECURITY_*.md
+PRODUCTION_*.md
+COMPREHENSIVE_*.md
+FILE_*.md
+PRE_*.md
+TEST_*.md
+
+# OAuth Credentials (Keep example, ignore actual files)
+client_secret_*.json
+google_oauth_creds.md
+
+# Development Documentation (Keep main docs)
+# Keep: api_doc.md, code_doc.md, auth_service_development_plan.md
+
+# Test Cache
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.temp
