@@ -105,7 +105,7 @@ async def google_login_redirect(request: Request):
     Returns a redirect response to Google's authorization server.
     """
     # Define redirect URI for the callback (matches Google Cloud Console configuration)
-    redirect_uri = "http://localhost:8006/auth/google/callback"
+    redirect_uri = "https://auth.socialmembrane.com/auth/google/callback"
     
     # Generate a secure random state parameter for CSRF protection using new manager
     state = oauth_state_manager.create_state()
@@ -661,7 +661,7 @@ async def google_oauth_callback(
             "client_secret": settings.GOOGLE_CLIENT_SECRET,
             "code": code,
             "grant_type": "authorization_code",
-            "redirect_uri": "http://localhost:8006/auth/google/callback"
+            "redirect_uri": "https://auth.socialmembrane.com/auth/google/callback"
         }
         
         async with httpx.AsyncClient() as client:
@@ -778,7 +778,7 @@ async def google_oauth_callback(
         
         # 9. Redirect back to frontend with tokens
         from fastapi.responses import RedirectResponse
-        frontend_url = "http://localhost:5173"
+        frontend_url = "https://dev.socialmembrane.com"
         redirect_url = f"{frontend_url}/?access_token={access_token}&refresh_token={refresh_token}"
         
         return RedirectResponse(url=redirect_url, status_code=302)
